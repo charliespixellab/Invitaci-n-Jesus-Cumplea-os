@@ -93,7 +93,7 @@
     /* ════════════════════════════════
        ENVELOPE SCREEN
     ════════════════════════════════ */
-       #envelope-screen {
+         #envelope-screen {
       position: fixed; inset: 0; z-index: 100;
       background-image: url('sobre-fondo.jpg');
       background-size: cover;
@@ -107,21 +107,23 @@
       overflow-y: auto;
       -webkit-overflow-scrolling: touch;
     }
+    
     #envelope-screen::before {
       content: '';
       position: absolute;
       inset: 0;
-      background: rgba(255, 255, 255, 0.4);
+      background: rgba(255, 255, 255, 0.3);
       z-index: 0;
     }
+    
     #envelope-screen > * {
       position: relative;
       z-index: 1;
     }
+    
     #envelope-screen.hidden {
       opacity: 0; pointer-events: none;
     }
-
     /* ════════════════════════════════
        MAIN INVITATION
     ════════════════════════════════ */
