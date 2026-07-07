@@ -127,11 +127,16 @@
       opacity: 0; pointer-events: none;
     }
 
-    .env-pre {
-      font-family: 'Lato', sans-serif;
-      font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
-      color: var(--gray-dk); margin-bottom: 20px; text-align: center;
-    }
+   .env-pre {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;  /* ← antes era 10px */
+  letter-spacing: 5px; /* ← antes era 4px */
+  text-transform: uppercase;
+  color: #1a2e3a;  /* ← más oscuro */
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700; /* ← NUEVO: más grueso */
+}
 
     .env-crest {
       font-size: 46px; margin-bottom: 8px;
@@ -139,16 +144,24 @@
     }
 
     .guest-welcome {
-      font-family: 'Great Vibes', cursive;
-      font-size: clamp(38px, 9vw, 58px);
-      color: var(--text); text-align: center;
-      margin-bottom: 6px; line-height: 1.2;
-    }
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(48px, 12vw, 72px);  /* ← antes era 38px-58px */
+  color: #1a2e3a;  /* ← más oscuro */
+  text-align: center;
+  margin-bottom: 6px;
+  line-height: 1.2;
+  text-shadow: 0 2px 8px rgba(255,255,255,0.6); /* ← NUEVO: sombra suave */
+}
     .guest-welcome-sub {
-      font-family: 'Lato', sans-serif;
-      font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
-      color: var(--gray-dk); text-align: center; margin-bottom: 40px;
-    }
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;  /* ← antes era 11px */
+  letter-spacing: 4px; /* ← antes era 3px */
+  text-transform: uppercase;
+  color: #1a2e3a;  /* ← más oscuro */
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 600; /* ← NUEVO: más grueso */
+}
 
     .env-wrap {
       cursor: pointer;
@@ -165,12 +178,16 @@
     .env-wrap:hover { transform: scale(1.03); }
     .env-wrap:active { transform: scale(0.97); }
 
-    .env-click-hint {
-      margin-top: 26px; text-align: center;
-      font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
-      color: var(--gray-dk);
-      animation: pulse 2s ease-in-out infinite;
-    }
+   .env-click-hint {
+  margin-top: 26px;
+  text-align: center;
+  font-size: 13px;  /* ← antes era 11px */
+  letter-spacing: 4px; /* ← antes era 3px */
+  text-transform: uppercase;
+  color: #1a2e3a;  /* ← más oscuro */
+  font-weight: 600; /* ← NUEVO: más grueso */
+  animation: pulse 2s ease-in-out infinite;
+}
     @keyframes pulse { 0%,100% { opacity: 0.5; } 50% { opacity: 1; } }
 
     .env-flap {
